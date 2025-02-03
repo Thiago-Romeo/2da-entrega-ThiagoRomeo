@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--CSS-->
+    
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!--Fonts-->
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+    <title>Menu | Musgos Cafeteria</title>
+</head>
+
+<body>
+  <div id="container_menu_grid">
+    <header class="header_menu grid_setter">
+        <!--Menu de navegacion, logo, redes, carrusel-->
+        <h1>Musgos</h1>
+         <nav>
+           <ul>
+             <li><a href="../index.html">Inicio</a></li>
+             <li><a href="../html/menu.html">Menu</a></li>
+             <li><a href="../html/nosotros.html">Nosotros</a></li>
+           </ul>
+         </nav>
+    </header>
+
+    <main class="main_menu grid_setter">
+     <h1>Menu</h1>
+    
+    
+      
+        <div class="container_produc">
+          <!--Bebibas-->
+          <h2 class="seccion">Bebidas</h2> <br>
+
+          <section class="front_producto">  
+            
+           
+             <!--Frias-->
+            
+             <div id="carouselExampleCaptions" class="carousel slide">
+             
+                <div class="carousel-indicators">
+                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <h3>Frias</h3>
+                 <div class="carousel-inner">
+
+                   <div class="carousel-item active">
+                     <img src="../assets/menu/frapuccino.jpg" class="d-block w-100" alt="frapuccino">
+                     <div class="carousel-caption d-none d-md-block">
+                       <h5>Frapuccino</h5>
+                     </div>
+                   </div>
+
+                   <div class="carousel-item">
+                     <img src="../assets/menu/mocafrapuccino.jpg" class="d-block w-100" alt="mocafrapuccino">
+                     <div class="carousel-caption d-none d-md-block">
+                       <h5>Moca frapuccino</h5>
+                     </div>
+                   </div>
+                  
+                   <div class="carousel-item">
+                     <img src="../assets/menu/icecoffe.jpg" alt="icecoffe" class="d-block     w-100">
+                     <div class="carousel-caption d-none d-md-block">
+                       <h5>Ice coffe</h5> 
+                     </div>
+                   </div>
+
+                  </div>
+
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"   data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"   data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+               
+             </div>
+            
+      
+            <!--Calientes-->
+            
+            <div id="carouselExampleCaptions1" class="carousel slide">
+             
+             <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active"   aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+             </div>
+
+             <h3>Calientes</h3>
+             <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                  <img src="../assets/menu/Cafemisto.webp" class="d-block w-100" alt="Cafe_Misto">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Cafe Misto</h5>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                   <img src="../assets/menu/Caramel-Macchiato---Feb-2023.jpeg" class="d-block w-100" alt="capuccino">
+                   <div class="carousel-caption d-none d-md-block">
+                     <h5>Capuccino</h5>
+                   </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="../assets/menu/GingerbreadLatte.jpg" alt="Chocolate_caliente" class="d-block w-100">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Chocolate caliente</h5> 
+                  </div>
+                </div>
+              </div>
+      
+                   <button class="carousel-control-prev" type="button"       data-bs-target="#carouselExampleCaptions1" data-bs-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Previous</span>
+                   </button>
+                   <button class="carousel-control-next" type="button"       data-bs-target="#carouselExampleCaptions1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                   </button>
+                 
+            </div>
+            
+          </section>
+          
+          <hr>
+          <!--Comida--> 
+          <h2 id="comida">Comida</h2>
+          <section class="front_producto">
+        
+            <!--Dulce-->
+            <div id="carouselExampleCaptions2" class="carousel slide">
+      
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active"   aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+
+              <h3>Dulce</h3>
+              <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                  <img src="../assets/menu/muffin_chocolate.jpeg" class="d-block w-100" alt="Triple_muffin_chocolate">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Triple muffin chocolate</h5>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="../assets/menu/Summer3_CHOCOLATE-HAZELNUT-CROISSANT.jpg" class="d-block w-100" alt="Croissant_chocolate">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Croissant de chocolate</h5>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="../assets/menu/cinnamon_roll.webp" alt="Cinnamon_roll" class="d-block w-100" >
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Cinnamon roll</h5> 
+                  </div>
+                </div>
+
+              </div>
+          
+        
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2"   data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2"   data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+  
+            <!--Salado-->
+            <div id="carouselExampleCaptions3" class="carousel slide">
+        
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="0" class="active"   aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+
+              <h3>Salado</h3>
+              <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                  <img src="../assets/menu/almond_croissant_salado.jpeg" class="d-block w-100" alt="croissant_almendras">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Croissant almendrado</h5>
+                  </div>
+                </div>
+
+               <div class="carousel-item">
+                 <img src="../assets/menu/croissant-roll-bacon.webp" class="d-block w-100" alt="capuccino">
+                 <div class="carousel-caption d-none d-md-block">
+                   <h5>Croissant roll de bacon</h5>
+                 </div>
+               </div>
+
+               <div class="carousel-item">
+                 <img src="../assets/menu/24.Ham-Cheese-Croissant1080-1.png" alt="Chocolate_caliente" class="d-block w-100">
+                 <div class="carousel-caption d-none d-md-block">
+                   <h5>Cheese croissant</h5> 
+                 </div>
+               </div>
+
+              </div>
+        
+               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide="next">
+                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Next</span>
+               </button>
+            </div>
+      
+          </section>
+        </div>
+      
+      
+        
+    </main>
+
+
+    <footer class="footer_menu grid_setter">
+        <!--redes sociales, menu de navegacion, contacto, etc-->
+        <div>
+         <p>Redes sociales</p> 
+          <a href="https://www.instagram.com/thecoffeestore/" target="_blank"><img src="../assets/iconos/icons8-instagram-150.png" alt="Instagram"></a> 
+          <a href="https://www.facebook.com/2428CoffeeStore" target="_blank"><img src="../assets/iconos/icons8-facebook-nuevo-150.png" alt="Facebook"></a> 
+          <a href="https://workspace.google.com/intl/es-419_ar/gmail/" target="_blank"><img src="../assets/iconos/icons8-correo-de-manzana-150.png" alt="Gmail"></a> 
+        </div>
+         <p class="copyright">©2024 Coffe Store</p> 
+    </footer>
+  </div> 
+  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

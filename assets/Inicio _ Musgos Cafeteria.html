@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--CSS-->
+    
+    
+    <!--Fonts-->
+    
+    
+    
+
+    <title>Inicio | Musgos Cafeteria</title>
+<link rel="stylesheet" href="./Inicio _ Musgos Cafeteria_files/style.css"><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link href="./Inicio _ Musgos Cafeteria_files/css2" rel="stylesheet"></head>
+
+<body>
+    <header>
+      <!--Menu de navegacion, logo, redes, carrusel-->
+      <img src="./Inicio _ Musgos Cafeteria_files/logocafeteria.png" alt="logo" id="logo">
+       <nav>
+         <ul>
+           <li><a href="http://127.0.0.1:5500/index.html">Inicio</a></li>
+           <li><a href="http://127.0.0.1:5500/html/menu.html">Menu</a></li>
+           <li><a href="http://127.0.0.1:5500/html/nosotros.html">Nosotros</a></li>
+         </ul>
+       </nav>
+    </header> 
+    
+    <main>
+      <!--Contenido principal-->
+
+      <!--Lo que vera el usuario apenas entre a la pagina-->
+      <h1>Musgos</h1>
+      <section id="front-principal">
+         <img id="imagen-principal" src="./Inicio _ Musgos Cafeteria_files/photo-1466019251091-1933ce15ba04.jpg" alt="Cafe foto">
+          <article id="front_container">
+            <h2>Acerca de nosotros</h2>
+           
+            <p>Bienvenidos a Musgos, un espacio creado para aquellos que buscan algo más que una simple taza de café. Nuestra cafetería no solo se distingue por el aroma del café recién hecho, sino también por la calidez y el encanto de un lugar pensado para que te sientas como en casa. Desde el momento en que cruzas nuestras puertas, te sumerges en un ambiente acogedor, donde cada rincón está diseñado con detalles que inspiran tranquilidad y bienestar. </p>
+          </article>
+      </section>
+      
+      <!--Cuando scrolee mas abajo se vera articulos-->
+      <section class="front">
+        <div class="front_separacion">
+         <article class="principal_container">
+           <img class="productos" src="./Inicio _ Musgos Cafeteria_files/Caramel-macchiato-03873ef.jpg">
+           <p>"El cappuccino es suave, aromático y tiene la espuma perfecta para empezar el día con una sonrisa."</p>
+         </article>
+          
+         <article class="principal_container">
+           <img class="productos" src="./Inicio _ Musgos Cafeteria_files/bagel-1000x768.webp">
+           <p>"El bagel es fresco, esponjoso y con el toque perfecto de crujiente en cada mordida."</p>
+         </article>
+        </div>
+         
+        <div class="front_separacion">
+         <article class="principal_container">
+           <img class="productos" src="./Inicio _ Musgos Cafeteria_files/licuado3.webp">
+           <p>"El licuado es cremoso, refrescante y tiene el equilibrio ideal de sabor natural y dulzura."</p>
+         </article>
+        
+         <article class="principal_container">
+           <img class="productos" src="./Inicio _ Musgos Cafeteria_files/Receta_Pan_Plano_Árabe.png">
+           <p>"El tostado árabe es crujiente, bien sazonado y rebosante de sabores auténticos."</p>
+         </article>
+        </div>
+         <img id="fotocafe" src="./Inicio _ Musgos Cafeteria_files/paredes_de_cafeteria_selva.jpg">
+      </section>
+      </main>
+
+    <footer>
+       <!--redes sociales, menu de navegacion, contacto, etc-->
+       <div>
+        <p>Redes sociales</p> 
+         <a href="https://www.instagram.com/thecoffeestore/" target="_blank"><img src="./Inicio _ Musgos Cafeteria_files/icons8-instagram-150.png" alt="Instagram"></a> 
+         <a href="https://www.facebook.com/2428CoffeeStore" target="_blank"><img src="./Inicio _ Musgos Cafeteria_files/icons8-facebook-nuevo-150.png" alt="Facebook"></a> 
+         <a href="https://workspace.google.com/intl/es-419_ar/gmail/" target="_blank"><img src="./Inicio _ Musgos Cafeteria_files/icons8-correo-de-manzana-150.png" alt="Gmail"></a> 
+        </div>  
+        <p class="copyright">©2024 Coffe Store</p> 
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
