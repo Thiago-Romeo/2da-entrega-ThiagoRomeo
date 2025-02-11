@@ -1,0 +1,96 @@
+/*------GRID CONTAINER-------*/
+/*---GRID INICIO---*/
+
+#container_principal_grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.4fr 4fr 4fr 0.1fr;
+    grid-template-areas: 
+           "header header"
+           "main   main"
+           "main   main"
+           "footer footer"
+    ;
+
+}
+
+
+.header_principal
+{
+    grid-area: header;
+}
+
+.main_principal
+{
+    grid-area: main;
+}
+
+.footer_principal
+{
+    grid-area: footer;
+}
+
+/*---GRID MENU---*/
+
+#container_menu_grid
+{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: 0.3fr 4fr 0.1fr;
+    grid-template-areas: 
+            "header_menu header_menu header_menu"
+            "main_menu   main_menu   main_menu"
+            "footer_menu footer_menu footer_menu"
+    ;
+
+    align-content: space-between;
+
+}
+
+.header_menu
+{
+    grid-area: header_menu;
+}
+
+.main_menu
+{
+    grid-area: main_menu;
+}
+
+.footer_menu
+{
+    grid-area: footer_menu;
+}
+
+
+/*---GRID NOSOTROS---*/
+
+#container_nosotros_grid_setter 
+{
+   display: grid;
+   
+   grid-template-rows: 0.2fr 2fr 1fr 0.1fr;
+   grid-template-areas: 
+             "header_nosotros header_nosotros header_nosotros"
+             "main_nosotros main_nosotros main_nosotros"
+             "main_nosotros main_nosotros main_nosotros" 
+             "footer_nosotros footer_nosotros footer_nosotros"
+   ;
+
+}
+
+.header_nosotros
+{
+    grid-area: header_nosotros;
+}
+
+.main_nosotros
+{
+    grid-area: main_nosotros;
+}
+
+.footer_nosotros
+{
+    grid-area: footer_nosotros;
+}

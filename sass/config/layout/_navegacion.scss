@@ -1,0 +1,54 @@
+
+
+
+header 
+{
+    background-color: $secondary-color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 1px 5px 10px #343a40; 
+    z-index: 1000; 
+
+
+    h1
+    {
+        color: #101111;
+    }
+
+    nav
+    {
+        width: 35%;
+    
+        ul 
+        {
+           display: flex;
+           justify-content: space-between;
+           font-size: 26px;
+           margin: 0 auto;
+        
+           a 
+           {
+              text-decoration: none;
+              color: $link-color;
+             
+              &:hover
+              {
+                  text-decoration: underline;
+                  font-size: 30px;
+                  transition: 0.1s;
+              } 
+
+           }
+        }  
+    }
+}
+
+
+
+
+

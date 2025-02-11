@@ -1,0 +1,21 @@
+{
+  "name": "pro-cafeteria",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-css": "sass --watch sass/style.scss css/main.css"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thiago-Romeo/repo-coder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thiago-Romeo/repo-coder/issues"
+  },
+  "homepage": "https://github.com/Thiago-Romeo/repo-coder#readme",
+  "description": ""
+}

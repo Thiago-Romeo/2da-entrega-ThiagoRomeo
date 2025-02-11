@@ -144,12 +144,7 @@ header
 header h1
 {
     color: #101111;
-}
-
-#logo
-{
-    width: 100px;
-    margin: 3px;
+    font-family: "Montserrat", serif;
 }
 
 nav
@@ -159,7 +154,6 @@ nav
 
 nav ul 
 {
-    color: #283618;
     display: flex;
     justify-content: space-between;
     font-size: 26px;
@@ -190,8 +184,9 @@ font-size: 50px;
 text-align: center;
 color: #fefae0;
 margin: 50px;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+
 
 main
 {
@@ -340,6 +335,11 @@ main
 /*Style menu*/
 /*Main*/
 
+#title_menu
+{
+    font-family: "Raleway", serif;
+    font-size: 70px;
+}
 
 .carousel 
 {
@@ -378,7 +378,7 @@ main
 }
 
 
-/*Bebidas frias*/
+/*bebida y comida*/
 
 .front_producto
 {
@@ -415,6 +415,12 @@ div h4{
 
 /*NOSOTROS*/
 
+#title_nosotros
+{
+    font-family: "Triodion", serif;
+    font-size: 70px; 
+}
+
 .container_nosotros{
     background-color: #dde5b6;
     padding: 1.5%;
@@ -450,7 +456,8 @@ div h4{
 {
     padding-top: 30px;
     max-width: 95%;
-    font-size: 25px;
+    font-size: inherit;
+    line-height: 35px;
 }
 
 .container_nosotros__nosotros_separacion__item_1 h2
@@ -519,7 +526,7 @@ form input{
 
 .container_nosotros__nosotros_separacion_2
 {
-    padding-top: 50px;
+    padding-top: 3px;
     display: grid;
     grid-template-columns: 0.5fr 1.2fr;
 }
@@ -742,6 +749,11 @@ footer img{
 
 @media(max-width:768px)
 {
+    #title_menu
+    {
+        font-size: 40px;
+    }
+    
     .container_produc
     {
         margin: 30px 0px 50px 0px;
@@ -835,7 +847,12 @@ footer img{
 
 @media(max-width:768px)
 {
-   
+   #title_nosotros
+   {
+    font-size: 40px;
+   }
+
+
    #container_nosotros_grid_setter 
    {
     grid-template-rows: 0.1fr 2fr 1fr 0.1fr;
@@ -901,7 +918,6 @@ footer img{
     .container_nosotros__nosotros_separacion_2
    {
     
-    padding-top: 50px;
     display: grid;
     grid-template-columns: 1fr;
    }
@@ -912,7 +928,8 @@ footer img{
 
 @media(max-width:400px)
 {
-   .container_nosotros
+
+    .container_nosotros
    {
     align-items: center;
    }  
@@ -932,4 +949,5 @@ footer img{
    {
     margin-left: 32px;
    }
+
 }
