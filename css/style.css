@@ -127,6 +127,7 @@ h2
 
 /*Header y navegacion*/
 
+
 header 
 {
     background-color: #dde5b6;
@@ -145,6 +146,12 @@ header h1
 {
     color: #101111;
 }
+
+.abrir-boton
+{
+    display: none;
+}
+
 
 #logo
 {
@@ -619,14 +626,36 @@ footer img{
     
     header
     {
-        width: 116%;
-        justify-content: flex-start;
+        width: 100%;
+        justify-content: space-between;
+        height: 123px;
     }
-    
+
+    header h1
+    {
+        margin: 33px;
+    }
+
     nav
     {
-       width: 50%;
+       width: 100%;
     }
+
+    nav ul 
+    {
+        align-items: end;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    nav ul a 
+    {
+        font-size: 20px;
+    }
+
+ 
+
+  
 
     #front-principal
     {
@@ -658,6 +687,7 @@ footer img{
     header
     {
         width: 100%;
+        height: 85px;
     }
     
     header h1
@@ -670,8 +700,7 @@ footer img{
     nav
     {
         width: 100%;;
-        margin: 0;
-        padding-right: 15px;
+        padding-right: 47px;
         
     }
 
@@ -679,6 +708,7 @@ footer img{
     {
         width: 100%;
         justify-content: space-around;
+        flex-direction: row;
     }
 
 
