@@ -99,6 +99,7 @@ header {
 }
 header h1 {
   color: #101111;
+  font-family: "Montserrat", serif;
 }
 header nav {
   width: 35%;

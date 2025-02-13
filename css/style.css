@@ -143,8 +143,11 @@ header
 
 header h1
 {
-    color: #101111;
+    color: #000000;
     font-family: "Montserrat", serif;
+    font-size: 50px;
+    text-align: center;
+    margin: 50px;
 }
 
 nav
@@ -179,12 +182,6 @@ nav ul a:hover
 /*Style Home*/
 /*Main*/
 
-h1 {
-font-size: 50px;
-text-align: center;
-color: #fefae0;
-margin: 50px;
-}
 
 
 
@@ -339,6 +336,9 @@ main
 {
     font-family: "Raleway", serif;
     font-size: 70px;
+    text-align: center;
+    color: #fefae0;
+    margin: 50px;
 }
 
 .carousel 
@@ -419,6 +419,9 @@ div h4{
 {
     font-family: "Triodion", serif;
     font-size: 70px; 
+    text-align: center;
+    color: #fefae0;
+    margin: 50px;
 }
 
 .container_nosotros{
