@@ -8,7 +8,7 @@
    #title_nosotros
    {
       font-size: 40px;
-      @include mar-pad(auto,50px 0 0 0);
+      padding-top: 50px;
    }
 
 
@@ -19,7 +19,7 @@
     
    .container_nosotros
    {
-       @include mar-pad(0px 0px 100px 0px);
+       margin:0px 0px 100px 0px;
        border-radius: 0px;
 
        &__nosotros_separacion
@@ -27,7 +27,7 @@
            display: grid;
            grid-template-columns: 1fr;
            grid-gap: 50px;
-           @include mar-pad(auto,20px);
+           padding: 20px;
 
            &__item_1
            {
@@ -39,7 +39,8 @@
            {
                align-items: map-get($estilos , centrado);
                text-align: map-get($estilos , centrado);
-               @include wh(auto,434px);
+              
+               height: 434px;
            }
        }
 
@@ -56,8 +57,8 @@
                
                &--ubicacion
                {
-                  @include wh(70%,auto);
-                  @include mar-pad(auto, 15px 0 0 0);
+                  width: 70%;
+                  padding-top: 15px;
                   border-radius: 10%;
                }
             
@@ -67,11 +68,11 @@
            {
                position: relative;
                right: 29px;
-               @include mar-pad(0 0 0 32px, auto);
+               margin-left: 32px;
                
                &__subitem_4--red-social
                {
-                   @include wh(45%,auto);
+                width: 45%;
                }
            }
        }
@@ -83,7 +84,7 @@
 
     #title_nosotros
     {
-       @include mar-pad(auto,10px 0 0 0);
+        padding-top: 10px;
     }
 
     .container_nosotros
@@ -97,17 +98,16 @@
 
        &__nosotros_separacion__item_2
        {
-           @include wh(auto,436px); 
+           height: 436px; 
        }
 
        &__nosotros_separacion_2
        {
-           @include mar-pad(auto,10px);
+           padding: 10px;
 
            &__item_4
            {
                margin-left: 32px;
-               @include mar-pad(0 0 0 32px,auto);
            }
        }
     }  

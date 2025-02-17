@@ -13,8 +13,8 @@
     height: $height;
 }
 
-@mixin mar-pad($margin, $padding)
+@mixin mar-pad($margin, $pad)
 {
     margin: $margin;
-    padding: $padding;
+    padding: $pad;
 }

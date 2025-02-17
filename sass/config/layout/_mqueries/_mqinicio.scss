@@ -48,7 +48,7 @@
         #front_container h2
         {
            font-size: 34px;
-           @include mar-pad(auto,0 0 10px 0);
+           padding-bottom: 10px;
         }
 
         #front_container p 
@@ -67,17 +67,18 @@
     
         &__productos
         {
-            @include wh(100%,auto);
+            width: 100%;
             padding: 0px;
         
             &__element
             {
-                @include mar-pad(60px,auto);
+                margin: 60px;
                 @include wh(80%,432px);
+                
 
                 &--productos
                 {
-                   @include wh(auto,294px);
+                   height: 294px;
                 }
             }
         }

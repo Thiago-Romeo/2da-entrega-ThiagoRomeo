@@ -14,7 +14,7 @@
             #imagen-principal
             {
               box-shadow: map-get($box-shadow , imagen-main );
-              @include wh(100%, auto);
+              width: 100%;
               border-radius: 30px;
               transform: scale(1.02);
               transition: 1s ease ;
@@ -75,7 +75,7 @@
         {
             padding-left: 1px;
             max-width: 100%;
-            @include wh(100%,auto);
+            width: 100%;
             @include grid(1fr 1fr 1fr, auto);
             justify-items: map-get($estilos , centrado );
             overflow: hidden;
@@ -98,14 +98,14 @@
                 
                 &--p
                 {
-                    @include wh(auto,60px);
+                    width: 100%;
                     overflow: hidden;
                     display: flex;
                     align-items: map-get($estilos , centrado );
                     justify-content: map-get($estilos , centrado );
                     text-align: map-get($estilos , centrado );
                     color: $white;
-                    @include mar-pad(auto,40px);
+                    padding: 40px
                 }
 
                 &--productos

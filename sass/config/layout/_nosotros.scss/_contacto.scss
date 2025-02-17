@@ -6,7 +6,7 @@
     font-size: 70px; 
     text-align: map-get($estilos , centrado );
     color: map-get($estilos , h1-color );
-    @include mar-pad(50px,auto);
+    margin: 50px;
 }
 
 .container_nosotros{
@@ -56,7 +56,7 @@
 
             form
             {
-                @include mar-pad(auto, 20px 0 0 0);
+                padding-top: 20px;
             
                 input
                 {
@@ -66,25 +66,25 @@
                 
                 #nombre
                 {
-                    @include mar-pad(auto,5px);
+                    padding: 5px;
                 }
 
                 #gmail
                 {
-                    @include mar-pad(auto,5px);
+                    padding: 5px;
                 }
 
                 textarea{
                     @include wh(320px,180px);
                     max-width: 100%;
-                    @include mar-pad(auto,8px);
+                    padding: 8px;
                     border-radius: 10px;
                     box-shadow: map-get($box-shadow , textarea );
                 }
 
                 #enviar
                 {
-                    @include mar-pad(20px 0 0 0,auto);
+                    margin-top: 20px;
                 
                     &:hover
                     {
@@ -99,26 +99,26 @@
 
     &__nosotros_separacion_2
     {
-        @include mar-pad(auto,3px 0 0 0);
+        padding-top: 3px;
         @include grid(0.5fr 1.2fr, auto);
     
         
         &__item_3--ubicacion
         {
-            @include wh(100%,auto);
-            @include mar-pad(auto,15px 0 0 0);
+            width: 100%;
+            padding-top: 15px;
         }
 
         &__item_3--click
         {
-            @include wh(23px,auto);
-            @include mar-pad(0 0 0 10px,auto);
+            width: 23px;
+            margin-left: 10px;
         }
      
         &__item_4
         {
             display: flex;
-            @include wh(100%,auto);
+            width: 100%;
             align-items: map-get($estilos , centrado);
             justify-content: flex-start;
             gap: 10px;
@@ -129,24 +129,24 @@
                 display: flex;
                 flex-direction: column;
                 align-items: map-get($estilos , centrado );
-                @include wh(35%,auto);
+                width: 35%;
                 gap: 10px;
    
                 
                 &--red-social
                 {
-                   @include wh(120px,auto);
+                    width: 120px;
                 }
 
                 &--flecha
                 {
 
-                    @include wh(30px,auto);
+                    width: 30px;
                 
                     &:hover
                     {
-                        @include wh(31px,auto);
-                        @include mar-pad(auto,0 0 10px 0);
+                        width: 31px;
+                        padding-bottom: 10px;
                         transition: 0.4s;
                     }
                 }

@@ -8,12 +8,12 @@
     #title_menu
     {
        font-size: 40px;
-       @include mar-pad(auto,65px 0 0 0);
+       padding-top: 65px;
     }
     
     .container_produc
     {
-        @include mar-pad(30px 0px 50px 0px,auto);
+        margin: 30px 0px 50px 0px;
         border-radius: 0px;
         
         h2
@@ -23,11 +23,11 @@
     
         .front_producto
         {
-           @include mar-pad(auto,0 0 5px 0);
+            padding-bottom: 5px;
 
            .carousel 
            {
-               @include wh(46.3%,auto);
+             width: 46.3%;
 
                h3
                {
@@ -36,7 +36,7 @@
         
                .carousel-inner
                {
-                 @include wh(98%,auto);
+                 width: 98%;
                }
            }
         }
@@ -55,7 +55,7 @@
 
     .container_produc
     {
-        @include mar-pad(auto, 10px 0 0 0);
+        padding-top: 10px;
 
         h2
         {
@@ -71,7 +71,7 @@
 
             .carousel
             {
-                @include wh(80.3%,auto);
+                width: 80.3%;
             }
         }
     }

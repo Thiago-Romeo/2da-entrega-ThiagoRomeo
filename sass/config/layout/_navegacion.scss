@@ -18,12 +18,12 @@ header
         font-family: $h1-header-font;
         font-size: 50px;
         text-align: map-get($estilos , centrado );
-        @include mar-pad(50px,auto);
+        margin: 50px;
     }
 
     nav
     {
-        @include wh(35%, auto);
+        width: 35%;
     
         ul 
         {

@@ -1,7 +1,6 @@
 /*Footer*/
 footer{
-
-    @include mar-pad(auto,20px);
+    padding: 20px;
     background-color: $secondary-color;
     background-size: cover;
     display: flex;
@@ -12,7 +11,7 @@ footer{
     
     img
     {
-        @include wh(35px,auto);
+        width: 35px;
         margin-right: 2px;
         position: relative;
         right: 1px;
