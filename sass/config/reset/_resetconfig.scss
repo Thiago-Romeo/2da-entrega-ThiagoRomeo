@@ -1,27 +1,31 @@
 * 
 {
-    margin:0;
-    padding:0;
+    @include mar-pad(0,0);
     text-decoration: none;
     font-family: $principal-font;
     list-style: none;
-    color: $font-color;
+    color: map-get($estilos , font-color);
     box-sizing: border-box;
 }
 
 body
 {
-    background-color: #012c0c;
+    background-color: $primary-color;
     min-width: 320px;
+}
+
+a
+{
+    text-decoration: none;
 }
 
 p
 {
-    margin: 0px;
+    @include mar-pad(0px,auto);
 }
 
 h2
 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: $h2-font;
 }
 

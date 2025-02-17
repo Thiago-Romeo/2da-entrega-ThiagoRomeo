@@ -1,0 +1,67 @@
+
+/*Style menu*/
+/*Main*/
+
+#title_menu
+{
+    font-family: $font-menu;
+    font-size: 70px;
+    text-align: map-get($estilos , centrado );
+    color: map-get($estilos , h1-color );
+    @include mar-pad(50px,auto);
+}
+
+
+.container_produc{
+    background-color: $secondary-color;
+    border-radius: 10px;
+    @include mar-pad(60px,1.5%);
+
+    h2
+    {
+       text-align: map-get($estilos , centrado );
+       font-size: 40px;
+       font-family: $h2-font;
+    }
+
+    #comida
+    {
+       @include mar-pad(auto,5px 0 0 0);
+    }
+
+    .front_producto
+    {
+        display: flex;
+        justify-content: map-get($estilos , spaceado-even );
+        flex-direction: row;
+        @include mar-pad(auto,0 0 80px 0);
+    
+        .carousel 
+        {
+            @include wh(33.3%,auto);  
+        
+            img
+            {
+                border-radius: 10px;
+            }
+        
+
+            h3{
+                font-size: 40px;
+                text-align: map-get($estilos , centrado );
+                font-family: $h3menu-font;
+            }
+            
+            
+            h5{
+                font-size: 30px;
+                font-family: $h5menu-font;
+               
+            }
+        }
+    }
+}
+
+
+
+

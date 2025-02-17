@@ -3,9 +3,7 @@
 
 #container_principal_grid
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.4fr 4fr 4fr 0.1fr;
+    @include grid(1fr 1fr, 0.4fr 4fr 4fr 0.1fr);
     grid-template-areas: 
            "header header"
            "main   main"
@@ -35,16 +33,14 @@
 
 #container_menu_grid
 {
-    display: grid;
-    grid-template-columns: 1fr 0.5fr 1fr;
-    grid-template-rows: 0.3fr 4fr 0.1fr;
+    @include grid(1fr 0.5fr 1fr, 0.3fr 4fr 0.1fr);
     grid-template-areas: 
             "header_menu header_menu header_menu"
             "main_menu   main_menu   main_menu"
             "footer_menu footer_menu footer_menu"
     ;
 
-    align-content: space-between;
+    align-content: map-get($estilos , spaceado-bet );
 
 }
 
@@ -68,9 +64,7 @@
 
 #container_nosotros_grid_setter 
 {
-   display: grid;
-   
-   grid-template-rows: 0.2fr 2fr 1fr 0.1fr;
+   @include grid(auto, 0.2fr 2fr 1fr 0.1fr);
    grid-template-areas: 
              "header_nosotros header_nosotros header_nosotros"
              "main_nosotros main_nosotros main_nosotros"

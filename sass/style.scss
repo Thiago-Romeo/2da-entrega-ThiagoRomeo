@@ -1,6 +1,8 @@
 /* Reset */
 @import "./config/reset/color";
 @import "./config/reset/tipograf";
+@import "./config/reset/mixins";
+@import "./config/reset/maps";
 @import "./config/reset/resetconfig";
 
 /* Grids */
@@ -9,4 +11,28 @@
 
 /* Header */
 @import "./config/layout/navegacion";
+
+
+/* Contenido main */
+@import "./config/layout/_inicio.scss/contenido";
+
+/*Menu*/
+@import "./config/layout/_menu.scss/productos" ;
+
+/* Nosotros */
+@import "./config/layout/_nosotros.scss/contacto";
+
+/* Footer */
+@import "./config/layout/piedepagina";
+
+/* Animaciones */
+@import "./config/reset/animaciones";
+
+
+/*Media Queries*/
+@import "./config/layout/_mqueries/mqcabecera";
+@import "./config/layout/_mqueries/mqinicio";
+@import "./config/layout/_mqueries/mqmenu";
+@import "./config/layout/_mqueries/mqnosotros";
+@import "./config/layout/_mqueries/mqpiedepagina";
 

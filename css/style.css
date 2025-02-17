@@ -16,6 +16,11 @@ body
     min-width: 320px;
 }
 
+a
+{
+    text-decoration: none;
+}
+
 p
 {
     margin: 0px;
@@ -97,7 +102,6 @@ h2
 #container_nosotros_grid_setter 
 {
    display: grid;
-   
    grid-template-rows: 0.2fr 2fr 1fr 0.1fr;
    grid-template-areas: 
              "header_nosotros header_nosotros header_nosotros"
@@ -126,6 +130,7 @@ h2
 
 
 /*Header y navegacion*/
+
 
 header 
 {
@@ -179,6 +184,7 @@ nav ul a:hover
 
 
 
+
 /*Style Home*/
 /*Main*/
 
@@ -198,20 +204,57 @@ main
     gap: 20px; 
     padding: 50px;
     max-width: 100%;
-    margin: 0 auto;
-    margin-bottom: 130px;
-    margin-top: 100px;
+    margin: 100px 0 130px 0;
 }
     
 
 
 #imagen-principal
 {
-    box-shadow: 0px 5px 30px 10px black;
     width: 100%; 
     height: auto;
     border-radius: 30px;
+    transform: scale(1.02);
+    transition: 1s ease ;
+    animation-name: sombra;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+     
 }
+
+
+
+@keyframes sombra
+{
+0% {
+    box-shadow: 5px 10px 40px 10px #012c0c;
+
+}
+
+25%
+{
+    box-shadow: 11px -2px 40px 10px #012c0c;
+}
+
+50%{
+    box-shadow: -11px -2px 40px 10px #012c0c;
+}
+
+75%
+{
+    box-shadow: -9px 13px 40px 10px #012c0c;
+}
+
+100% {
+    box-shadow: 5px 10px 40px 10px #012c0c;
+    
+}
+    
+}
+
 
 #front_container
 {
@@ -222,7 +265,7 @@ main
 #front_container h2
 {
     font-size: 46px;
-    font-style:italic;
+    font-style: italic;
     text-align: center;
 }
 
@@ -262,12 +305,14 @@ main
 
 
 .front_secondary__productos {
+    padding-left: 1px;
     max-width: 100%;
-    width: 98%;
+    width: 100%;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
+    overflow: hidden;
 
 }
 
@@ -289,16 +334,10 @@ main
     align-content: space-between;
 }
 
-.front_secondary__productos__element:hover
-{
-    width: 73%;
-    transition: 0.5s;
-    box-shadow: 1px 2px 30px 2px #012c0c;
-}
 
-.front_secondary__productos__element p
+.front_secondary__productos__element--p
 {
-    height: 60px; /* Ajusta según necesites */
+    height: 60px; 
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -315,17 +354,7 @@ main
     border-radius: 20px 20px 0px 0px; 
 }
 
-.front_secondary__productos__element--compra
-{
-    width: 50px;
-    padding: 10px;
-    border-radius: 100%;
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #e7e7e7;
-}
+
 
 /*---------------*/
 
@@ -341,6 +370,33 @@ main
     margin: 50px;
 }
 
+
+.container_produc{
+    background-color: #dde5b6;
+    padding: 1.5%;
+    border-radius: 10px;
+    margin: 60px;
+   
+}
+
+
+.container_produc h2
+{
+    text-align: center;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.front_producto
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding-bottom: 80px;
+}
+
+
 .carousel 
 {
     width: 33.3%;
@@ -353,64 +409,18 @@ main
 }
 
 
-.container_produc{
-    background-color: #dde5b6;
-    padding: 1.5%;
-    border-radius: 10px;
-    margin: 60px;
-   
-}
-
-
-
-.container_produc h2
-{
-    text-align: center;
-    font-size: 40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
-}
-
-.container_produc h3{
+.carousel h3{
     font-size: 40px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-/*bebida y comida*/
-
-.front_producto
-{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    padding-bottom: 80px;
-}
-
-.producto_individual img
-{
-    width: 390px;
-    height: 300px;
-    border-radius: 90%;
-}
-
-#comida
-{
-    padding-top: 50px;
-}
-
-
-/*----------------------*/
-div h4{
-    font-size: 25px;
-}
-
-.carrusel{
-    width: 20px;
+.carousel h5{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    
     
 }
-
 
 
 /*NOSOTROS*/
@@ -457,7 +467,7 @@ div h4{
 
 .container_nosotros__nosotros_separacion__item_1 p
 {
-    padding-top: 30px;
+    padding-left: 3px;
     max-width: 95%;
     font-size: inherit;
     line-height: 35px;
@@ -471,7 +481,7 @@ div h4{
 .container_nosotros__nosotros_separacion__item_2
 {
     width: 100%;
-    height: 500px;
+    height: 440px;
     display: flex;
     flex-direction: column;
 }
@@ -488,7 +498,7 @@ div h4{
 }
 
 form textarea{
-    width: 400px;
+    width: 320px;
     max-width: 100%;
     height: 180px;
     padding: 8px;
@@ -508,7 +518,7 @@ form input{
 {
     padding: 5px;
 }
-#email
+#gmail
 {
     padding: 5px;
 }
@@ -613,6 +623,8 @@ footer img{
 
 
 
+
+
 /*---RESPONSIVE---*/
 /*---Index------*/
 /*---mobile: 480px---*/
@@ -629,14 +641,36 @@ footer img{
     
     header
     {
-        width: 116%;
-        justify-content: flex-start;
+        width: 100%;
+        justify-content: space-between;
+        height: 123px;
     }
-    
+
+    header h1
+    {
+        margin: 33px;
+    }
+
     nav
     {
-       width: 50%;
+       width: 100%;
     }
+
+    nav ul 
+    {
+        align-items: end;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    nav ul a 
+    {
+        font-size: 20px;
+    }
+
+ 
+
+  
 
     #front-principal
     {
@@ -660,7 +694,7 @@ footer img{
     
     }
     
-    
+
 }
 
 @media(max-width:400px)
@@ -668,6 +702,7 @@ footer img{
     header
     {
         width: 100%;
+        height: 85px;
     }
     
     header h1
@@ -679,9 +714,7 @@ footer img{
 
     nav
     {
-        width: 100%;;
-        margin: 0;
-        padding-right: 15px;
+        padding-right: 47px;
         
     }
 
@@ -689,6 +722,7 @@ footer img{
     {
         width: 100%;
         justify-content: space-around;
+        flex-direction: row;
     }
 
 
@@ -743,6 +777,10 @@ footer img{
      }
 
 
+    footer p 
+    {
+        font-size: 15px;
+    } 
 }
 
 /*---RESPONSIVE---*/
@@ -754,7 +792,8 @@ footer img{
 {
     #title_menu
     {
-        font-size: 40px;
+       font-size: 40px;
+       padding-top: 65px;
     }
     
     .container_produc
@@ -781,12 +820,6 @@ footer img{
 
     }
 
-    .main_menu h1
-    {
-        font-size: 50px;
-        padding-top: 25px;
-    }
-
     .carousel 
     {
         width: 46.3%;
@@ -802,23 +835,22 @@ footer img{
 @media(max-width:400px)
 {
 
-    .main_menu h1
+
+    #title_menu
     {
         font-size: 40px;
+        padding-top: 20px;
         margin-top: 8px;
         margin-bottom: 10px;
     }
+
+   
 
     .container_produc h2
     {
         font-size: 40px;
     }
 
-    #comida
-    {
-        padding-top: 65px;
-        font-size: 40px;
-    } 
 
     .front_producto
     {
@@ -853,6 +885,7 @@ footer img{
    #title_nosotros
    {
     font-size: 40px;
+    padding-top: 50px;
    }
 
 
@@ -874,11 +907,12 @@ footer img{
     text-align: center;
    }
 
+
    .container_nosotros__nosotros_separacion__item_2
    {
     align-items: center;
     text-align: center;
-    height: 397px;
+    height: 434px;
    }
 
 
@@ -932,10 +966,20 @@ footer img{
 @media(max-width:400px)
 {
 
+    #title_nosotros
+    {
+     padding-top: 10px;
+    }
+
     .container_nosotros
    {
     align-items: center;
    }  
+
+   .container_nosotros__nosotros_separacion__item_1 p
+   {
+    font-size: 18px;
+   }
    
    .container_nosotros__nosotros_separacion__item_2
    {
@@ -954,3 +998,9 @@ footer img{
    }
 
 }
+
+
+
+
+
+

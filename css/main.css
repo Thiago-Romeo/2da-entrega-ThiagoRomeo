@@ -1,123 +1,23 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  font-family: "Nunito Sans", serif;
-  list-style: none;
-  color: #283618;
-  box-sizing: border-box;
-}
+/* Error: Missing argument $padding.
+ *    ,--> sass\config\layout\_mqueries\_mqnosotros.scss
+ * 22 |        @include mar-pad(0px 0px 100px 0px);
+ *    |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
+ *    '
+ *    ,--> sass\config\reset\_mixins.scss
+ * 16 | @mixin mar-pad($margin, $padding)
+ *    |        ========================== declaration
+ *    '
+ *   sass\config\layout\_mqueries\_mqnosotros.scss 22:8  mar-pad()
+ *   sass\config\layout\_mqueries\_mqnosotros.scss 22:8  @import
+ *   sass\style.scss 36:9                                root stylesheet */
 
-body {
-  background-color: #012c0c;
-  min-width: 320px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Missing argument $padding.\a    \250c \2500 \2500 > sass\\config\\layout\\_mqueries\\_mqnosotros.scss\a 22 \2502         @include mar-pad(0px 0px 100px 0px);\d\a    \2502         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation\a    \2575 \a    \250c \2500 \2500 > sass\\config\\reset\\_mixins.scss\a 16 \2502  @mixin mar-pad($margin, $padding)\d\a    \2502         \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a    \2575 \a   sass\\config\\layout\\_mqueries\\_mqnosotros.scss 22:8  mar-pad()\a   sass\\config\\layout\\_mqueries\\_mqnosotros.scss 22:8  @import\a   sass\\style.scss 36:9                                root stylesheet";
 }
-
-p {
-  margin: 0px;
-}
-
-h2 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-/* Grids */
-/*------GRID CONTAINER-------*/
-/*---GRID INICIO---*/
-#container_principal_grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.4fr 4fr 4fr 0.1fr;
-  grid-template-areas: "header header" "main   main" "main   main" "footer footer";
-}
-
-.header_principal {
-  grid-area: header;
-}
-
-.main_principal {
-  grid-area: main;
-}
-
-.footer_principal {
-  grid-area: footer;
-}
-
-/*---GRID MENU---*/
-#container_menu_grid {
-  display: grid;
-  grid-template-columns: 1fr 0.5fr 1fr;
-  grid-template-rows: 0.3fr 4fr 0.1fr;
-  grid-template-areas: "header_menu header_menu header_menu" "main_menu   main_menu   main_menu" "footer_menu footer_menu footer_menu";
-  align-content: space-between;
-}
-
-.header_menu {
-  grid-area: header_menu;
-}
-
-.main_menu {
-  grid-area: main_menu;
-}
-
-.footer_menu {
-  grid-area: footer_menu;
-}
-
-/*---GRID NOSOTROS---*/
-#container_nosotros_grid_setter {
-  display: grid;
-  grid-template-rows: 0.2fr 2fr 1fr 0.1fr;
-  grid-template-areas: "header_nosotros header_nosotros header_nosotros" "main_nosotros main_nosotros main_nosotros" "main_nosotros main_nosotros main_nosotros" "footer_nosotros footer_nosotros footer_nosotros";
-}
-
-.header_nosotros {
-  grid-area: header_nosotros;
-}
-
-.main_nosotros {
-  grid-area: main_nosotros;
-}
-
-.footer_nosotros {
-  grid-area: footer_nosotros;
-}
-
-/* Header */
-header {
-  background-color: #dde5b6;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 90px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  box-shadow: 1px 5px 10px #343a40;
-  z-index: 1000;
-}
-header h1 {
-  color: #101111;
-  font-family: "Montserrat", serif;
-}
-header nav {
-  width: 35%;
-}
-header nav ul {
-  display: flex;
-  justify-content: space-between;
-  font-size: 26px;
-  margin: 0 auto;
-}
-header nav ul a {
-  text-decoration: none;
-  color: #101111;
-}
-header nav ul a:hover {
-  text-decoration: underline;
-  font-size: 30px;
-  transition: 0.1s;
-}
-
-/*# sourceMappingURL=main.css.map */

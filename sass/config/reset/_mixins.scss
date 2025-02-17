@@ -1,0 +1,20 @@
+/*Mixins*/
+
+@mixin grid($columas, $filas) 
+{
+    display:grid;
+    grid-template-columns:$columas;
+    grid-template-rows:$filas;
+}
+
+@mixin wh($width, $height)
+{
+    width: $width;
+    height: $height;
+}
+
+@mixin mar-pad($margin, $padding)
+{
+    margin: $margin;
+    padding: $padding;
+}

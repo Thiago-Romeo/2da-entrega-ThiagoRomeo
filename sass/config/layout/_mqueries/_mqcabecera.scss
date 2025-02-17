@@ -1,0 +1,68 @@
+/*header*/
+/*---mobile: 480px---*/
+/*---tablet: 768px ---*/
+
+@media (max-width:768px)
+{
+    #container_principal_grid
+   {
+    grid-template-rows: 0.2fr 4fr 4fr 0.1fr;
+   }
+    
+    header
+    {
+        @include wh(100%, 123px);
+        justify-content: map-get($estilos , spaceado-bet);
+        
+    
+        h1
+        {
+           @include mar-pad(33px,auto);
+        }
+
+        nav
+        {
+           @include wh(100%,auto);
+        
+           ul 
+            {
+               align-items: end;
+               flex-direction: column;
+               @include mar-pad(20px,auto);
+           
+                a 
+                {
+                   font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:400px)
+{
+
+    header
+    {
+        
+        @include wh(100%, 85px);
+
+        h1 
+        {
+           visibility: hidden;
+           display: none;
+        }
+
+        nav
+        {
+           @include mar-pad(auto,0 47px 0 0);
+        
+           ul 
+            {
+               @include wh(100%,auto);
+               justify-content: map-get($estilos , spaceado-aro);
+               flex-direction: row;
+            }
+        }
+    }
+}

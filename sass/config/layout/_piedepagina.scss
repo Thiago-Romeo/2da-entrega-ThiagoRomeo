@@ -1,18 +1,18 @@
 /*Footer*/
 footer{
 
-    padding: 20px;
-    background-color: #dde5b6;
+    @include mar-pad(auto,20px);
+    background-color: $secondary-color;
     background-size: cover;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: map-get($estilos , centrado );
+    justify-content: map-get($estilos , spaceado-bet );
     font-size: 20px;
     
     
-    footer img
+    img
     {
-        width: 35px;
+        @include wh(35px,auto);
         margin-right: 2px;
         position: relative;
         right: 1px;

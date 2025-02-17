@@ -1,0 +1,114 @@
+
+/*---Nosotros------*/
+/*---mobile: 480px---*/
+/*---tablet: 768px ---*/
+
+@media(max-width:768px)
+{
+   #title_nosotros
+   {
+      font-size: 40px;
+      @include mar-pad(auto,50px 0 0 0);
+   }
+
+
+   #container_nosotros_grid_setter 
+   {
+    grid-template-rows: 0.1fr 2fr 1fr 0.1fr;
+   }
+    
+   .container_nosotros
+   {
+       @include mar-pad(0px 0px 100px 0px);
+       border-radius: 0px;
+
+       &__nosotros_separacion
+       {
+           display: grid;
+           grid-template-columns: 1fr;
+           grid-gap: 50px;
+           @include mar-pad(auto,20px);
+
+           &__item_1
+           {
+               align-items: map-get($estilos , centrado);
+               text-align: map-get($estilos , centrado);
+           }
+          
+           &__item_2
+           {
+               align-items: map-get($estilos , centrado);
+               text-align: map-get($estilos , centrado);
+               @include wh(auto,434px);
+           }
+       }
+
+       
+       &__nosotros_separacion_2
+       {
+           display: grid;
+           grid-template-columns: 1fr;
+
+           &__item_3
+           {
+               align-items: map-get($estilos , centrado);
+               text-align: map-get($estilos , centrado);
+               
+               &--ubicacion
+               {
+                  @include wh(70%,auto);
+                  @include mar-pad(auto, 15px 0 0 0);
+                  border-radius: 10%;
+               }
+            
+           }
+
+           &__item_4
+           {
+               position: relative;
+               right: 29px;
+               @include mar-pad(0 0 0 32px, auto);
+               
+               &__subitem_4--red-social
+               {
+                   @include wh(45%,auto);
+               }
+           }
+       }
+    }
+}
+
+@media (max-width:400px)
+{
+
+    #title_nosotros
+    {
+       @include mar-pad(auto,10px 0 0 0);
+    }
+
+    .container_nosotros
+    {
+       align-items: map-get($estilos , centrado);
+
+       &__nosotros_separacion__item_1 p
+       {
+           font-size: 18px;
+       }
+
+       &__nosotros_separacion__item_2
+       {
+           @include wh(auto,436px); 
+       }
+
+       &__nosotros_separacion_2
+       {
+           @include mar-pad(auto,10px);
+
+           &__item_4
+           {
+               margin-left: 32px;
+               @include mar-pad(0 0 0 32px,auto);
+           }
+       }
+    }  
+}

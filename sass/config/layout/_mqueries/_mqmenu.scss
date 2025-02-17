@@ -1,0 +1,78 @@
+
+/*---Menu------*/
+/*---mobile: 480px---*/
+/*---tablet: 768px ---*/
+
+@media(max-width:768px)
+{
+    #title_menu
+    {
+       font-size: 40px;
+       @include mar-pad(auto,65px 0 0 0);
+    }
+    
+    .container_produc
+    {
+        @include mar-pad(30px 0px 50px 0px,auto);
+        border-radius: 0px;
+        
+        h2
+        {
+            font-size: 30px;
+        }
+    
+        .front_producto
+        {
+           @include mar-pad(auto,0 0 5px 0);
+
+           .carousel 
+           {
+               @include wh(46.3%,auto);
+
+               h3
+               {
+                  font-size: 25px;
+               }
+        
+               .carousel-inner
+               {
+                 @include wh(98%,auto);
+               }
+           }
+        }
+    }
+}
+
+
+@media(max-width:400px)
+{
+    #title_menu
+    {
+        font-size: 40px;
+        @include mar-pad(8px 0 10px 0,20px 0 0 0);
+    }
+
+
+    .container_produc
+    {
+        @include mar-pad(auto, 10px 0 0 0);
+
+        h2
+        {
+            font-size: 40px;
+        }
+    
+        .front_producto
+        {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: map-get($estilos , centrado );
+            grid-gap: 50px;
+
+            .carousel
+            {
+                @include wh(80.3%,auto);
+            }
+        }
+    }
+}

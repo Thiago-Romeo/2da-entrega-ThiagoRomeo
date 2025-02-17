@@ -1,0 +1,29 @@
+/* Animaciones */
+
+@keyframes sombra
+{
+
+0% {
+    box-shadow: 5px 10px 40px 10px $primary-color;
+
+}
+
+25%
+{
+    box-shadow: 11px -2px 40px 10px $primary-color;
+}
+
+50%{
+    box-shadow: -11px -2px 40px 10px $primary-color;
+}
+
+75%
+{
+    box-shadow: -9px 13px 40px 10px $primary-color;
+}
+
+100% {
+    box-shadow: 5px 10px 40px 10px $primary-color;
+    
+}
+}

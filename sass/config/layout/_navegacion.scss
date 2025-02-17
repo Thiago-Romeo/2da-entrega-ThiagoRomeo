@@ -1,39 +1,41 @@
 
 header 
 {
+    @include wh(100%, 90px);
     background-color: $secondary-color;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 90px;
-    width: 100%;
+    justify-content: map-get($estilos , spaceado-aro );
+    align-items: map-get($estilos , centrado);
     position: fixed;
     top: 0;
-    box-shadow: 1px 5px 10px #343a40; 
+    box-shadow: map-get($box-shadow, cabecera);
     z-index: 1000; 
 
 
     h1
     {
-        color: #101111;
+        color: $black;
         font-family: $h1-header-font;
+        font-size: 50px;
+        text-align: map-get($estilos , centrado );
+        @include mar-pad(50px,auto);
     }
 
     nav
     {
-        width: 35%;
+        @include wh(35%, auto);
     
         ul 
         {
            display: flex;
-           justify-content: space-between;
+           justify-content: map-get($estilos , spaceado-bet );
            font-size: 26px;
            margin: 0 auto;
         
            a 
            {
               text-decoration: none;
-              color: $link-color;
+              color: map-get($estilos , link-color );
              
               &:hover
               {
@@ -41,7 +43,6 @@ header
                   font-size: 30px;
                   transition: 0.1s;
               } 
-
            }
         }  
     }
