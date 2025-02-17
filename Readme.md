@@ -23,3 +23,8 @@
 - Pseudoclases
 - Animaciones
 
+## Para inicializar Sass
+```
+npm run watch-css
+```
+
