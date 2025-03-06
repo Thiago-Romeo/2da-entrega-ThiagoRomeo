@@ -5,32 +5,25 @@
 {
     @include grid(1fr 1fr, 0.4fr 4fr 4fr 0.1fr);
     grid-template-areas: 
-           "header header"
+           "headerprincipal headerprincipal"
            "main   main"
            "main   main"
            "footer footer"
     ;
-
 }
-
-
-.header_principal
+.cabecera_principal
 {
-    grid-area: header;
+    grid-area: headerprincipal;
 }
-
-.main_principal
+.contenido_principal
 {
     grid-area: main;
 }
-
-.footer_principal
+.pie_principal
 {
     grid-area: footer;
 }
-
 /*---GRID MENU---*/
-
 #container_menu_grid
 {
     @include grid(1fr 0.5fr 1fr, 0.3fr 4fr 0.1fr);
@@ -39,30 +32,22 @@
             "main_menu   main_menu   main_menu"
             "footer_menu footer_menu footer_menu"
     ;
-
     align-content: map-get($estilos , spaceado-bet );
-
 }
-
-.header_menu
+.cabecera_menu
 {
     grid-area: header_menu;
 }
-
-.main_menu
+.contenido_menu
 {
     grid-area: main_menu;
 }
-
-.footer_menu
+.pie_menu
 {
     grid-area: footer_menu;
 }
-
-
 /*---GRID NOSOTROS---*/
-
-#container_nosotros_grid_setter 
+#container_nosotros_grid
 {
    @include grid(auto, 0.2fr 2fr 1fr 0.1fr);
    grid-template-areas: 
@@ -71,20 +56,16 @@
              "main_nosotros main_nosotros main_nosotros" 
              "footer_nosotros footer_nosotros footer_nosotros"
    ;
-
 }
-
-.header_nosotros
+.cabecera_nosotros
 {
     grid-area: header_nosotros;
 }
-
-.main_nosotros
+.contenido_nosotros
 {
     grid-area: main_nosotros;
 }
-
-.footer_nosotros
+.pie_nosotros
 {
     grid-area: footer_nosotros;
 }

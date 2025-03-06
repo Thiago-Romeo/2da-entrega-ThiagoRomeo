@@ -4,9 +4,7 @@
 
 @media(max-width:768px)
 {
-    
-    
-    #front-principal
+    .front-principal
     {
 
       display: grid;
@@ -14,68 +12,63 @@
       text-align: map-get($estilos , centrado);
       grid-gap: 50px;
 
+      &__imgprinc
+      {
+        display: none;
+        visibility: hidden;
+      }
     }
-
-    
-    .front_secondary__productos 
-    
+    .front_secondary
     {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
         justify-items: map-get($estilos , centrado);
-    
+        gap: 125px;
+        padding: 50px;
+        .card 
+        {
+            border-radius: 1% 1% 1% 1%;
+            img
+            {
+                border-radius: 1% 1% 1% 1%;
+            }
+        }
     }
-    
- 
 }
-
-
 @media(max-width:400px)
 {
-
-    #front-principal
+    .front-principal
     {
         @include mar-pad(28px 0 0 0,15px);
         gap: 15px;
-    
-        #imagen-principal
+        &__imgprinc
         {
            display: none;
            visibility: hidden;
         }
-    
-        #front_container h2
+        &__front_container h2
         {
            font-size: 34px;
            padding-bottom: 10px;
         }
-
-        #front_container p 
+        &__front_container p 
         {
             font-size: 20px;
             line-height: 35px;
         }
-
-
     }
-
-    
     .front_secondary
     {
         padding: 1px;
-    
         &__productos
         {
             width: 100%;
             padding: 0px;
-        
             &__element
             {
                 margin: 60px;
                 @include wh(80%,432px);
-                
-
                 &--productos
                 {
                    height: 294px;

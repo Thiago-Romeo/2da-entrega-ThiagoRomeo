@@ -1,17 +1,14 @@
 /*Style Home*/
 /*Main*/  
-    
-    
-        #front-principal
+        .front-principal
         {
-            @include mar-pad(100px 0 130px 0,50px);
+            @include mar-pad(20px 0 130px 0,50px);
             background-color: $secondary-color;
             display: grid;
             grid-template-columns: 1fr 1fr; 
             gap: 20px; 
             max-width: 100%;
-        
-            #imagen-principal
+            &__imgprinc
             {
               box-shadow: map-get($box-shadow , imagen-main );
               width: 100%;
@@ -24,33 +21,29 @@
               animation-iteration-count: infinite;
               animation-delay: 0.8s;
               animation-fill-mode: forwards;
-            }
-            
-            #front_container
+            } 
+            &__front_container
             {
               font-size: 20px;
               line-height: 40px;
-            
+              padding-left: 2%;
                 h2
                 {
                    font-size: 46px;
                    font-style:italic;
                    text-align: map-get($estilos , centrado );
                 }
-
-                #hrr
+                &--separador
                 {
                    display: flex;
                    align-items: map-get($estilos , centrado );
-                   justify-content: map-get($estilos , centrado );   
-                
+                   justify-content: map-get($estilos , centrado );                  
                    hr
                    {
                        @include wh(70%, 2px);
                        background-color: map-get($estilos , link-color );
                    }
                 }
-
                 p
                 {
                     font-size: 27px;
@@ -60,63 +53,40 @@
                 }
             }
         }
-    
-
-    
     /*scroll abajo*/
-
     .front_secondary
     {
         background-color: $secondary-color;
-        @include mar-pad(0px 0px 100px 0px, 70px);
+        @include mar-pad(0px 0px 100px 0px, 50px 0px 50px 0px);
         border-radius: 1px;
-    
-        &__productos 
+        display: flex;
+        justify-content: map-get($estilos,spaceado-even);
+        .card
         {
-            padding-left: 1px;
-            max-width: 100%;
-            width: 100%;
-            @include grid(1fr 1fr 1fr, auto);
-            justify-items: map-get($estilos , centrado );
-            overflow: hidden;
-        
-            &__element {
-                @include wh(70%, 454px);
-                @include mar-pad(61px, 0 0 15px 0);
-                background-color: map-get($estilos , card-color );
-                border-radius: 15px;
-                max-height: 100%;
-                box-shadow: map-get($box-shadow , elemento );
-                max-width: 100%;
-
-                display: flex;
-                flex-direction: column;
-                justify-content: map-get($estilos , spaceado-bet );
-                align-items: map-get($estilos , centrado);
-                align-content: map-get($estilos , spaceado-bet );
-            
-                
-                &--p
-                {
-                    height: 60px;
-                    overflow: hidden;
-                    display: flex;
-                    align-items: map-get($estilos , centrado );
-                    justify-content: map-get($estilos , centrado );
-                    text-align: map-get($estilos , centrado );
-                    color: $white;
-                    padding: 40px
-                }
-
-                &--productos
-                {
-                    @include wh(100%,320px);
-                    border-radius: 20px 20px 0px 0px; 
-                }
+           background-color: $primary-color;
+           --bs-card-title-spacer-y: 1rem;
+           border-radius: 25% 1% 1% 1%;
+           box-shadow: map-get($box-shadow ,elemento);
+           img 
+           {
+               border-radius: 20% 1% 1% 1%;
+           }
+           .card-body
+           {
+               text-align: map-get($estilos , centrado);
+               h3
+               {
+                  color: $white;
+                  font-family: $h3card;
+               }
+               p
+               {
+                  color: $white;
+                  padding-bottom: 5px;
+                  font-family: $pcard;
+               } 
             }
         }
     }
-    
-    
-    
+
    

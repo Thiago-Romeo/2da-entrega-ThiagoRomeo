@@ -6,9 +6,8 @@
     font-size: 70px; 
     text-align: map-get($estilos , centrado );
     color: map-get($estilos , h1-color );
-    margin: 50px;
+    margin-bottom: 50px;
 }
-
 .container_nosotros{
     background-color: $secondary-color;
     @include mar-pad(0px 60px 60px 60px,1.5%);
@@ -16,11 +15,9 @@
     display: flex;
     flex-direction: column;
     max-width: auto;
-    
     &__nosotros_separacion
     {
         @include grid(60% 40%,1fr);
-    
         &__item_1
         {
             max-width: 100%;
@@ -28,12 +25,10 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            
             h2
             {
                 font-size: 40px;
             }
-
             p
             {
                 padding-left: 3px;
@@ -42,88 +37,89 @@
                 line-height: 35px;
             }
         }
-
         &__item_2
         {
             @include wh(100%,440px);
             display: flex;
             flex-direction: column;
-        
+            gap: 5px;
             h2
             {
                 font-size: 35px;
             }
-
-            form
+            &__subitem1
             {
-                padding-top: 20px;
-            
-                input
-                {
-                    @include wh(200px,30px);
-                    border-radius: 10px;
-                }
-                
-                #nombre
-                {
-                    padding: 5px;
-                }
-
-                #gmail
-                {
-                    padding: 5px;
-                }
-
+               width: 90%;
+               display: flex;
+               flex-direction: column;
+               h3 
+               {
+                  font-size: 25px;  
+               }
+               input
+               {
+                  border: $gris 1px solid;
+                  opacity: 0.9;
+                  border-radius: 5px;
+                  height: 40px;
+                  box-shadow: 1px 4px 10px;
+                  font-size: 24px;
+               }
+            }
+            &__subitem2
+            {
+                display: flex;
+                align-items: flex-end;
+                gap: 10px;
                 textarea{
-                    @include wh(320px,180px);
+                    @include wh(70%,180px);
                     max-width: 100%;
-                    padding: 8px;
+                    @include mar-pad(10px 0 0 0,8px);
                     border-radius: 10px;
                     box-shadow: map-get($box-shadow , textarea );
+                    font-size: 24px;
                 }
-
-                #enviar
+                input
                 {
                     margin-top: 20px;
-                
+                    @include wh(18%,50px);
+                    border-radius: 10px;
+                    font-size: 15px;
                     &:hover
                     {
                         background-color: $black;
                         color: $white;
-                        transition: 0.2s;
+                        transition: 0.5s;
                     }
                 }
             }
         }
     }  
-
     &__nosotros_separacion_2
     {
         padding-top: 3px;
         @include grid(0.5fr 1.2fr, auto);
-    
-        
-        &__item_3--ubicacion
+        &__item_3
         {
-            width: 100%;
-            padding-top: 15px;
+            @include wh(100%,100%);
+            iframe
+            {
+                @include wh(100%,246px);
+            }
+            &__item_3--click
+            {
+                width: 23px;
+                margin-left: 10px;
+            }
         }
-
-        &__item_3--click
-        {
-            width: 23px;
-            margin-left: 10px;
-        }
-     
         &__item_4
         {
             display: flex;
-            width: 100%;
+            width: 96%;
             align-items: map-get($estilos , centrado);
             justify-content: flex-start;
             gap: 10px;
             @include mar-pad(20px,10px);
-
             &__subitem_4
             {
                 display: flex;
@@ -131,18 +127,13 @@
                 align-items: map-get($estilos , centrado );
                 width: 35%;
                 gap: 10px;
-   
-                
                 &--red-social
                 {
                     width: 120px;
                 }
-
                 &--flecha
                 {
-
                     width: 30px;
-                
                     &:hover
                     {
                         width: 31px;

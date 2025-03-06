@@ -8,68 +8,73 @@
    #title_nosotros
    {
       font-size: 40px;
-      padding-top: 50px;
+      margin: 20px;
    }
-
-
    #container_nosotros_grid_setter 
    {
-    grid-template-rows: 0.1fr 2fr 1fr 0.1fr;
+      grid-template-rows: 0.1fr 2fr 1fr 0.1fr;
    }
-    
    .container_nosotros
    {
        margin:0px 0px 100px 0px;
        border-radius: 0px;
-
        &__nosotros_separacion
        {
            display: grid;
            grid-template-columns: 1fr;
            grid-gap: 50px;
            padding: 20px;
-
            &__item_1
            {
                align-items: map-get($estilos , centrado);
                text-align: map-get($estilos , centrado);
            }
-          
            &__item_2
            {
                align-items: map-get($estilos , centrado);
                text-align: map-get($estilos , centrado);
-              
                height: 434px;
+               &__subitem1
+               {
+                  width: 100%;
+               }
+               &__subitem2
+               {
+                  flex-direction: column;
+                  align-items: flex-start;
+                  gap: 5px;
+                  textarea
+                  {
+                    width: 100%;
+                    height: 130px;
+                  }
+                  input 
+                  {
+                    width: 100%;
+                  }
+               }
            }
-       }
-
-       
+       } 
        &__nosotros_separacion_2
        {
            display: grid;
            grid-template-columns: 1fr;
-
            &__item_3
            {
                align-items: map-get($estilos , centrado);
                text-align: map-get($estilos , centrado);
-               
                &--ubicacion
                {
                   width: 70%;
                   padding-top: 15px;
                   border-radius: 10%;
                }
-            
            }
-
            &__item_4
            {
                position: relative;
                right: 29px;
                margin-left: 32px;
-               
                &__subitem_4--red-social
                {
                 width: 45%;
@@ -81,30 +86,24 @@
 
 @media (max-width:400px)
 {
-
     #title_nosotros
     {
-        padding-top: 10px;
+        margin-top: 0px;
     }
-
     .container_nosotros
     {
        align-items: map-get($estilos , centrado);
-
        &__nosotros_separacion__item_1 p
        {
            font-size: 18px;
        }
-
        &__nosotros_separacion__item_2
        {
            height: 436px; 
        }
-
        &__nosotros_separacion_2
        {
            padding: 10px;
-
            &__item_4
            {
                margin-left: 32px;

@@ -3,102 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="description" content="Tienda de cafes musgos variada y super accesible. ¡Consigue tu desayuno box antes de que se acabe el tiempo!">
+    <meta name="keywords" content="cafeteria, cafe, precio, barato, castelar, coffee, desayuno, merienda, especial, musgos">
+    <link rel="icon" href="./assets/cafeicono.ico" type="image/x-icon">
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Iansui&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ponomar&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Triodion&display=swap" rel="stylesheet">
     <!--BOOTSTRAP Y CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
-
     <!--Librerias-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-   
-
     <title>Inicio | Musgos Cafeteria</title>
 </head>
   <body>
-    
-    <div id="container_principal_grid">
-      
-        <header class="header_principal grid_setter">
-        
-        <!--Menu de navegacion, logo, redes, carrusel-->
-        
-        <a href="./index.html"><h1>Musgos</h1></a>
-         <nav>
-           <ul>
-             <li><a href="./index.html">Inicio</a></li>
-             <li><a href="./html/menu.html">Menu</a></li>
-             <li><a href="./html/nosotros.html">Nosotros</a></li>
-           </ul>
-         </nav>
-      </header> 
-                
-
-    <main class="main_principal grid_setter">
-      <!--Contenido principal-->
+   <div id="container_principal_grid">
+    <header class="cabecera_principal grid_centrador"><!--Cabecera de pagina-->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><h2>Musgos</h2></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./html/menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./html/nosotros.html">Nosotros</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header> 
+    <main class="contenido_principal grid_centrador"><!--Contenido principal-->
       <!--Lo que vera el usuario apenas entre a la pagina-->
-      
-        <section id="front-principal">
-          <img id="imagen-principal" src="./assets/photo-1466019251091-1933ce15ba04.jpg" alt="Cafe foto">
-          <article id="front_container">
+        <section class="front-principal">
+          <img class="front-principal__imgprinc" src="./assets/cafeteria-del-frontprincipal.jpg" alt="Imagen del Cafe">
+          <article class="front-principal__front_container">
             <h2>Acerca de nosotros</h2>
-            <div id="hrr"><hr></div>
+            <div class="front-principal__front_container--separador"><hr></div>
             <p>Bienvenidos a Musgos, un espacio creado para aquellos que buscan algo más que una simple taza de café. Nuestra cafetería no solo se distingue por el aroma del café recién hecho, sino también por la calidez y el encanto de un lugar pensado para que te sientas como en casa. Desde el momento en que cruzas nuestras puertas, te sumerges en un ambiente acogedor, donde cada rincón está diseñado con detalles que inspiran tranquilidad y bienestar. </p>
           </article>
         </section>
-      
       <!--Cuando scrolee mas abajo se vera articulos-->
-        <section class="front_secondary" >
-         
-         <ul class="front_secondary__productos" data-aos="zoom-in">
-
-           <li class="front_secondary__productos__element" data-aos="fade-down-right">
-            <img class="front_secondary__productos__element--productos" src="./assets/Caramel-macchiato-03873ef.jpg">
-            <p class="front_secondary__productos__element--p">"El cappuccino es suave, aromático y tiene la espuma perfecta"</p>
-            <button type="button" class="btn btn-success">Comprar</button>           
-           </li>
-
-           <li class="front_secondary__productos__element" data-aos="fade-down">
-            <img class="front_secondary__productos__element--productos" src="./assets/bagel-1000x768.webp">
-            <p class="front_secondary__productos__element--p">El bagel es fresco, esponjoso y con el toque perfecto."</p>
-            <button type="button" class="btn btn-success">Comprar</button>
-           </li>
-
-           <li class="front_secondary__productos__element" data-aos="fade-down-left">
-            <img class="front_secondary__productos__element--productos " src="./assets/licuado3.webp">
-            <p class="front_secondary__productos__element--p">El licuado es cremoso, refrescante y muy rico"</p>
-            <button type="button" class="btn btn-success">Comprar</button>
-          </li>
-
-          </ul>
-        </section> 
-      </main>
-
-    <footer class="footer_principal grid_setter" >
+        <section class="front_secondary">   
+        <div class="card" style="width: 18rem;" data-aos="zoom-in">
+          <img src="./assets/box-desayuno.png" class="card-img-top" alt="caja de desayuno">
+          <div class="card-body">
+            <h3 class="card-title">¡Desayuno box!</h3>
+            <p class="card-text">¡Empieza el día con una deliciosa caja de desayuno llena de sorpresas frescas y sabores irresistibles! 🍓🥐☕️</p>
+            <a href="./html/menu.html" class="btn btn-primary">Ver mas...</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;" data-aos="zoom-in">
+          <img src="./assets/desayuno-personalizado.jpeg" class="card-img-top" alt="merienda personlizada">
+          <div class="card-body">
+            <h3 class="card-title">¡Tu Merienda!</h3>
+            <p class="card-text">Endulzá tu tarde con una merienda personalizada, hecha a tu gusto y llena de detalles únicos que te van a encantar.🍪</p>
+            <a href="./html/menu.html" class="btn btn-primary">Ver mas...</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;" data-aos="zoom-in">
+          <img src="./assets/productos-exclusivos.jpg" class="card-img-top" alt="productos de cafeteria">
+          <div class="card-body">
+            <h3 class="card-title">¡Exclusivos!</h3>
+            <p class="card-text">Descubrí la elegancia de lo único con nuestros productos exclusivos, diseñados para quienes buscan lo mejor. ✨🔥</p>
+            <a href="./html/menu.html" class="btn btn-primary">Ver mas...</a>
+          </div>
+        </div>
+        </section>
+    </main>
+    <footer class="pie_principal grid_centrador" ><!--Pie de pagina-->
        <!--redes sociales, menu de navegacion, contacto, etc-->
        <div>
         <p>Redes sociales</p> 
-         <a href="https://www.instagram.com/thecoffeestore/" target="_blank"><img src="./assets/iconos/icons8-instagram-150.png" alt="Instagram"></a> 
-         <a href="https://www.facebook.com/2428CoffeeStore" target="_blank"><img src="./assets/iconos/icons8-facebook-nuevo-150.png" alt="Facebook"></a> 
-         <a href="https://workspace.google.com/intl/es-419_ar/gmail/" target="_blank"><img src="./assets/iconos/icons8-correo-de-manzana-150.png" alt="Gmail"></a> 
+         <a href="https://www.instagram.com/thecoffeestore/" target="_blank"><img src="./assets/iconos/instagram.png" alt="Instagram"></a> 
+         <a href="https://www.facebook.com/2428CoffeeStore" target="_blank"><img src="./assets/iconos/facebook.png" alt="Facebook"></a> 
+         <a href="https://workspace.google.com/intl/es-419_ar/gmail/" target="_blank"><img src="./assets/iconos/gmail.png" alt="Gmail"></a> 
        </div>  
         <p class="copyright">©2024 Musgos</p> 
     </footer>
-    
-    </div>
+   </div> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
   </body>
-
 </html>

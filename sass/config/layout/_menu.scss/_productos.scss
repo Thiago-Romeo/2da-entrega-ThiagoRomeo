@@ -1,61 +1,49 @@
 
 /*Style menu*/
 /*Main*/
-
 #title_menu
 {
     font-family: $font-menu;
     font-size: 70px;
     text-align: map-get($estilos , centrado );
     color: map-get($estilos , h1-color );
-    margin: 50px;
+    margin: 10px;
 }
-
-
 .container_produc{
     background-color: $secondary-color;
     border-radius: 10px;
     @include mar-pad(60px,1.5%);
-
     h2
     {
        text-align: map-get($estilos , centrado );
        font-size: 40px;
-       font-family: $h2-font;
+       font-family: $h2menu-font;
     }
-
     #comida
     {
        padding-top: 5px;
     }
-
     .front_producto
     {
         display: flex;
         justify-content: map-get($estilos , spaceado-even );
         flex-direction: row;
         padding-bottom: 80px;
-    
         .carousel 
         {
             width: 33.3%; 
-        
             img
             {
                 border-radius: 10px;
-            }
-        
-
+            }       
             h3{
                 font-size: 40px;
                 text-align: map-get($estilos , centrado );
                 font-family: $h3menu-font;
-            }
-            
-            
-            h5{
+            }           
+            h4{
                 font-size: 30px;
-                font-family: $h5menu-font;
+                font-family: $h4menu-font;
                
             }
         }

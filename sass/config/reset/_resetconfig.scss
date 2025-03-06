@@ -1,3 +1,4 @@
+/*Reset configuracion*/
 * 
 {
     @include mar-pad(0,0);
@@ -7,23 +8,19 @@
     color: map-get($estilos , font-color);
     box-sizing: border-box;
 }
-
 body
 {
     background-color: $primary-color;
     min-width: 320px;
 }
-
 a
 {
     text-decoration: none;
 }
-
 p
 {
     margin: 0px;
 }
-
 h2
 {
     font-family: $h2-font;

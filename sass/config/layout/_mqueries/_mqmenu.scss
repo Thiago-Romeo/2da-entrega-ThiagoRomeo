@@ -8,32 +8,26 @@
     #title_menu
     {
        font-size: 40px;
-       padding-top: 65px;
+       padding-top: 0px;
     }
-    
     .container_produc
     {
         margin: 30px 0px 50px 0px;
         border-radius: 0px;
-        
         h2
         {
             font-size: 30px;
         }
-    
         .front_producto
         {
             padding-bottom: 5px;
-
            .carousel 
            {
              width: 46.3%;
-
                h3
                {
                   font-size: 25px;
                }
-        
                .carousel-inner
                {
                  width: 98%;
@@ -43,32 +37,25 @@
     }
 }
 
-
 @media(max-width:400px)
 {
     #title_menu
     {
         font-size: 40px;
-        @include mar-pad(8px 0 10px 0,20px 0 0 0);
     }
-
-
     .container_produc
     {
         padding-top: 10px;
-
         h2
         {
             font-size: 40px;
         }
-    
         .front_producto
         {
             display: grid;
             grid-template-columns: 1fr;
             justify-items: map-get($estilos , centrado );
             grid-gap: 50px;
-
             .carousel
             {
                 width: 80.3%;

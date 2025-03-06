@@ -2,67 +2,19 @@
 /*---mobile: 480px---*/
 /*---tablet: 768px ---*/
 
-@media (max-width:768px)
+@media (min-width:992px)
 {
-    #container_principal_grid
-   {
-    grid-template-rows: 0.2fr 4fr 4fr 0.1fr;
-   }
-    
-    header
+    .navbar-expand-lg .navbar-collapse
     {
-        @include wh(100%, 123px);
-        justify-content: map-get($estilos , spaceado-bet);
-        
-    
-        h1
-        {
-            margin: 33px;
-        }
-
-        nav
-        {
-            width: 100%;
-        
-           ul 
-            {
-               align-items: end;
-               flex-direction: column;
-               margin: 20px;
-           
-                a 
-                {
-                   font-size: 20px;
-                }
-            }
-        }
+        padding-left: 45%;
     }
-}
-
-@media (max-width:400px)
-{
-
-    header
+    .navbar-expand-lg .navbar-nav
     {
-        
-        @include wh(100%, 85px);
-
-        h1 
+        gap: 24px;
+        .nav-link
         {
-           visibility: hidden;
-           display: none;
-        }
-
-        nav
-        {
-            padding-right: 47px;
-        
-           ul 
-            {
-                width: 100%;
-               justify-content: map-get($estilos , spaceado-aro);
-               flex-direction: row;
-            }
+           font-size: 25px;
+           color: $black;
         }
     }
 }
